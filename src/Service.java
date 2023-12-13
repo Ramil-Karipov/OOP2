@@ -1,6 +1,7 @@
-public class ServiceStation implements Service {
-    @Override
-    public void check(Car car, Bicycle bicycle, Truck truck) {
+public interface Service {
+    void check(Car car, Bicycle bicycle, Truck truck);
+
+    {
         if (car != null) {
             System.out.println("Обслуживаем " + car.getModelName());
             for (int i = 0; i < car.getWheelsCount(); i++) {
@@ -21,5 +22,4 @@ public class ServiceStation implements Service {
             }
         }
     }
-
 }
