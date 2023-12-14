@@ -1,4 +1,4 @@
-public abstract class Transport {
+public class Transport {
     public String modelName;
     public int wheelsCount;
 
@@ -22,20 +22,8 @@ public abstract class Transport {
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
-
-    @Override
-    public abstract void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
-
-    @Override
-    public abstract void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
-
-    @Override
-    public abstract void checkTrailer() {
-        System.out.println("Проверяем прицеп");
-    }
-
 }
+
+
+
+
