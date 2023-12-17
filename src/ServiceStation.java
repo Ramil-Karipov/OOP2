@@ -1,5 +1,4 @@
-public class ServiceStation implements Service {
-    @Override
+public abstract class ServiceStation implements Service {
     public void check(Transport transport) {
         if (transport != null) {
             System.out.println("Обслуживаем " + transport.getModelName());
@@ -20,8 +19,11 @@ public class ServiceStation implements Service {
                 WheeledTransport.updateTyre();
             }
         }
+
     }
 }
+
+
 
 
 

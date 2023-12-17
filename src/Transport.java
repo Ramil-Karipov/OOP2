@@ -1,6 +1,6 @@
-public class Transport {
+public abstract class Transport implements Service {
     public String modelName;
-    public int wheelsCount;
+    public static int wheelsCount;
 
     public Transport(String modelName, int wheelsCount) {
         this.modelName = modelName;
@@ -19,8 +19,19 @@ public class Transport {
         return wheelsCount;
     }
 
+    @Override
+    public abstract void check() {
+        (Transport != null) {
+            System.out.println("Обслуживаем " + Transport.wheelsCount());
+            for (int i = 0; i < Transport.wheelsCount(); i++) {
+                WheeledTransport.updateTyre();
+            }
+        }
+    }
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
+
+
     }
 }
 

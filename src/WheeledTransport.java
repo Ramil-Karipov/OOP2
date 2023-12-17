@@ -1,5 +1,5 @@
 public abstract class WheeledTransport {
-    void updateTyre() {
+    static void updateTyre() {
         System.out.println("Меняем покрышку");
     }
 }
