@@ -6,6 +6,7 @@ public abstract class MotorTransport extends Transport {
     @Override
     public void check() {
         super.check();
+        checkEngine();
     }
 
     public static void checkEngine() {
