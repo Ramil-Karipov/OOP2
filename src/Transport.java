@@ -20,13 +20,16 @@ public abstract class Transport implements Service {
     }
 
     @Override
-    public abstract void check() {
-        (Transport != null) {
-            System.out.println("Обслуживаем " + Transport.wheelsCount());
-            for (int i = 0; i < Transport.wheelsCount(); i++) {
-                WheeledTransport.updateTyre();
-            }
+    public void check() {
+        System.out.println("Обслуживаем " + wheelsCount);
+        for (int i = 0; i < wheelsCount; i++) {
+            updateTyre();
         }
+
+    }
+
+    public void updateTyre() {
+        System.out.println("Меняем покрышку");
     }
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;

@@ -7,7 +7,7 @@ public class Main {
         Truck truck = new Truck("Грузовик", 6);
         Truck truck2 = new Truck("Грузовик1", 6);
 
-        Transport[] transport = new Transport[]{bicycle, car2, truck};
+        Transport[] transport = new Transport[]{bicycle, bicycle2, car, car2, truck, truck2};
         for (Transport transport1 : transport) {
             transport1.check();
         }
